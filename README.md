@@ -70,6 +70,10 @@ Some sensors are disabled by default and can be enabled in the entity registry.
 <!-- Screenshot: sensors / device entities -->
 ![Sensors](images/sensors.png)
 
+## Test
+
+Zyxel PLA6457 (Firmware V1.00 (ACAJ.2)C0)
+
 ## Notes
 
 - PHY rates use the same formula as the device web UI: `floor(value × 32 / 1000)`.
