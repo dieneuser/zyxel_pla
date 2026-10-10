@@ -4,7 +4,7 @@
 
 Home Assistant custom integration for the **Zyxel PLA6457** G.hn powerline adapter.
 
-It may also work with similar Zyxel PLA models that expose the same local web interface (`device.html` / `ghn.html`).
+It may also work with similar Zyxel PLA models that expose the same local web interface.
 
 The integration logs into the adapter’s web UI and polls device information and link rates — no cloud service required.
 
