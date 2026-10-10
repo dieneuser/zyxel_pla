@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zyxel PLA Powerline",
+        "description": "Enter the IP address and password of your Zyxel PLA6457 adapter.",
+        "data": {
+          "host": "IP address / Hostname",
+          "password": "Password",
+          "name": "Name (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Connection failed – check IP and password",
+      "invalid_auth": "Invalid password",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This adapter is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "mac": {
+        "name": "MAC address"
+      },
+      "serial_number": {
+        "name": "Serial number"
+      },
+      "fw_version": {
+        "name": "Firmware version"
+      },
+      "hw_version": {
+        "name": "Hardware version"
+      },
+      "device_name": {
+        "name": "Device name"
+      },
+      "device_description": {
+        "name": "Device description"
+      },
+      "manufacturer": {
+        "name": "Manufacturer"
+      },
+      "uptime": {
+        "name": "Last boot"
+      },
+      "node_type": {
+        "name": "Node type"
+      },
+      "device_id": {
+        "name": "Device ID"
+      },
+      "domain_name": {
+        "name": "Domain name"
+      },
+      "phy_tx": {
+        "name": "PHY TX rate"
+      },
+      "phy_rx": {
+        "name": "PHY RX rate"
+      },
+      "remote_mac": {
+        "name": "Remote MAC address"
+      },
+      "remote_device_id": {
+        "name": "Remote device ID"
+      }
+    }
+  }
+}

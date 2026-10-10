@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zyxel PLA Powerline",
+        "description": "Gib die IP-Adresse und das Passwort deines Zyxel PLA6457 Adapters ein.",
+        "data": {
+          "host": "IP-Adresse / Hostname",
+          "password": "Passwort",
+          "name": "Name (optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen – prüfe IP und Passwort",
+      "invalid_auth": "Falsches Passwort",
+      "unknown": "Unbekannter Fehler"
+    },
+    "abort": {
+      "already_configured": "Dieser Adapter ist bereits konfiguriert"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "mac": {
+        "name": "MAC-Adresse"
+      },
+      "serial_number": {
+        "name": "Seriennummer"
+      },
+      "fw_version": {
+        "name": "Firmware-Version"
+      },
+      "hw_version": {
+        "name": "Hardware-Version"
+      },
+      "device_name": {
+        "name": "Gerätename"
+      },
+      "device_description": {
+        "name": "Gerätebeschreibung"
+      },
+      "manufacturer": {
+        "name": "Hersteller"
+      },
+      "uptime": {
+        "name": "Letzter Start"
+      },
+      "node_type": {
+        "name": "Knotentyp"
+      },
+      "device_id": {
+        "name": "Geräte-ID"
+      },
+      "domain_name": {
+        "name": "Domainname"
+      },
+      "phy_tx": {
+        "name": "PHY-TX-Rate"
+      },
+      "phy_rx": {
+        "name": "PHY-RX-Rate"
+      },
+      "remote_mac": {
+        "name": "Remote-MAC-Adresse"
+      },
+      "remote_device_id": {
+        "name": "Remote-Geräte-ID"
+      }
+    }
+  }
+}

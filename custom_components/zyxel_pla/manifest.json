@@ -1,0 +1,12 @@
+{
+  "domain": "zyxel_pla",
+  "name": "Zyxel PLA Powerline",
+  "codeowners": ["@dieneuser"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/dieneuser/zyxel_pla",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/dieneuser/zyxel_pla/issues",
+  "requirements": ["beautifulsoup4", "lxml"],
+  "version": "1.0.0"
+}
