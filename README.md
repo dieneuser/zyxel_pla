@@ -75,6 +75,8 @@ Some sensors are disabled by default and can be enabled in the entity registry.
 - PHY rates use the same formula as the device web UI: `floor(value × 32 / 1000)`.
 - If multiple remote adapters are connected, the first link is exposed as the main TX/RX sensors. The full list is available in the coordinator data under `connections`.
 
+- Tested with Zyxel PLA6457 (Firmware V1.00 (ACAJ.2)C0)
+
 ## License
 
 MIT
