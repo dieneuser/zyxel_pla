@@ -1,2 +1,2 @@
 # zyxel_pla
-Home Assistant custom coponent for Zyxel PLA adapter
+Home Assistant custom component for Zyxel PLA adapter
