@@ -1,4 +1,4 @@
-# Zyxel PLA Powerline
+# <img src="images/icon.png" width="40" height="40" alt="Zyxel PLA"> Zyxel PLA Powerline
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
