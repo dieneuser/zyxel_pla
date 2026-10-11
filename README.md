@@ -12,7 +12,6 @@ The integration logs into the adapter’s web UI and polls device information an
 
 The adapter allows only one active web session at a time. After each poll the integration logs out and closes the session so the web interface remains available for local use.
 
-<!-- Screenshot: integration card / device page -->
 ![Integration overview](images/overview.png)
 
 ## Features
@@ -20,7 +19,7 @@ The adapter allows only one active web session at a time. After each poll the in
 - Config flow setup (no YAML)
 - Local polling only
 - English and German translations
-- Brand icon included
+- Brand and device icon included
 
 ## Installation (HACS)
 
@@ -33,8 +32,7 @@ The adapter allows only one active web session at a time. After each poll the in
 5. Search for **Zyxel PLA Powerline** and install it
 6. Restart Home Assistant
 
-<!-- Screenshot: HACS custom repository dialog -->
-![HACS custom repository](images/hacs_add_repo.png)
+[![HACS custom repository](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?repository=zyxel_pla&owner=dieneuser)
 
 ## Configuration
 
@@ -44,10 +42,7 @@ The adapter allows only one active web session at a time. After each poll the in
 4. Enter the **IP address** and **password** of your adapter
 5. Optionally set a friendly name
 
-<!-- Screenshot: config flow dialog -->
-![Configuration](images/config_flow.png)
-
-Default update interval: **60 seconds**.
+[![HA config flow](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=zyxel_pla)
 
 ## Sensors
 
@@ -78,7 +73,7 @@ Some sensors are disabled by default and can be enabled in the entity registry.
 
 - PHY rates use the same formula as the device web UI: `floor(value × 32 / 1000)`.
 - If multiple remote adapters are connected, the first link is exposed as the main TX/RX sensors. The full list is available in the coordinator data under `connections`.
-
+- Default update interval: **60 seconds**.
 - Tested with Zyxel PLA6457 (Firmware V1.00 (ACAJ.2)C0)
 
 ## License
