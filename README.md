@@ -1,8 +1,10 @@
-# <img src="images/icon.png" width="40" height="40" alt="Zyxel PLA"> Zyxel PLA Powerline
+# Zyxel PLA custom component for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
-Home Assistant custom integration for the **Zyxel PLA6457** G.hn powerline adapter.
+Home Assistant custom integration for the **Zyxel PLA6457** G\.hn powerline adapter.
+
+<img src="images/icon.png" alt="Zyxel PLA6457">
 
 It may also work with similar Zyxel PLA models that expose the same local web interface.
 
