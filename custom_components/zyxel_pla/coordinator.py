@@ -100,6 +100,32 @@ class ZyxelPLACoordinator(DataUpdateCoordinator[dict[str, Any]]):
                 # Still on login page → wrong password
                 raise UpdateFailed("Invalid password")
 
+    async def _logout(self) -> None:
+        """End the web session so the GUI can be used again."""
+        if self._session is None or self._session.closed:
+            return
+
+        url = f"http://{self.host}/"
+
+        data = {
+            "LOG_OUT_OK": "Log Out",
+            "CSRFTOKEN": "",
+            "REDIRECT": "/",
+        }
+
+        try:
+            async with self._session.post(
+                url,
+                data=data,
+                timeout=aiohttp.ClientTimeout(total=5),
+            ) as resp:
+                await resp.text()
+        except Exception:
+            pass
+
+        await self._session.close()
+        self._session = None
+
     async def _fetch_page(self, path: str) -> str:
         """Fetch a page (will re-login if necessary)."""
         session = await self._async_get_session()
@@ -240,3 +266,7 @@ class ZyxelPLACoordinator(DataUpdateCoordinator[dict[str, Any]]):
         except Exception as err:
             _LOGGER.exception("Unexpected error fetching Zyxel PLA data")
             raise UpdateFailed(f"Unexpected error: {err}") from err
+
+        finally:
+            # Always release the single web session so the browser GUI works
+            await self._logout()

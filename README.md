@@ -1,12 +1,16 @@
-# <img src="images/icon.png" width="40" height="40" alt="Zyxel PLA"> Zyxel PLA Powerline
+# Zyxel PLA custom component for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
-Home Assistant custom integration for the **Zyxel PLA6457** G.hn powerline adapter.
+Home Assistant custom integration for the **Zyxel PLA6457** G\.hn powerline adapter.
+
+![Device](images/device.png)
 
 It may also work with similar Zyxel PLA models that expose the same local web interface.
 
-The integration logs into the adapter’s web UI and polls device information and link rates — no cloud service required.
+The integration logs into the adapter’s web UI and polls device information and link rates — no cloud service required. It is read-only: no settings are changed on the adapter, and the integration does not provide any controls to modify its configuration.
+
+The adapter allows only one active web session at a time. After each poll the integration logs out and closes the session so the web interface remains available for local use.
 
 <!-- Screenshot: integration card / device page -->
 ![Integration overview](images/overview.png)
